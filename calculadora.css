@@ -1,0 +1,93 @@
+/* Usa as variáveis (cores) definidas em style.css */
+
+.calc {
+  max-width: 640px;
+  margin: 0 auto 40px;
+  background-color: var(--branco);
+  border: 1px solid var(--medio);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.calc h3 {
+  margin: 24px 0 12px;
+}
+
+.calc label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.calc input {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: 1.05rem;
+  color: var(--escuro);
+  background-color: var(--branco);
+  border: 1px solid var(--medio);
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calc input:focus {
+  outline: none;
+  border-color: var(--escuro);
+  box-shadow: 0 0 0 3px var(--bege);
+}
+
+.calc-entrada input {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Taxas: grid de 3 colunas */
+.taxas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+/* Resultados: grid de 3 colunas */
+.resultados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.resultado {
+  background-color: var(--bege);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resultado:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(89, 62, 28, 0.25);
+}
+
+.moeda {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--dourado);
+}
+
+.valor {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--escuro);
+  word-break: break-all;
+}
+
+.calc .botao {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}

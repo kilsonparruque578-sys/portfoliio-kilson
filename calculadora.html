@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Câmbio | Kilson Parruque</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html#projectos">&larr; Voltar ao portfólio</a>
+      <a class="idioma" href="en-calculadora.html">EN</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="faixa pagina-projecto">
+      <div class="conteudo">
+        <h1>Calculadora de Câmbio</h1>
+        <p class="instrucao">Converta meticais (MZN) para dólar, euro e rand.</p>
+
+        <div class="calc">
+
+          <div class="calc-entrada">
+            <label for="valor">Valor em MZN</label>
+            <input type="number" id="valor" min="0" step="any" placeholder="Ex.: 1000">
+          </div>
+
+          <h3>Taxas de câmbio (1 unidade = quantos MZN)</h3>
+          <div class="taxas">
+            <div class="taxa">
+              <label for="taxa-usd">1 USD =</label>
+              <input type="number" id="taxa-usd" min="0" step="any" placeholder="MZN">
+            </div>
+            <div class="taxa">
+              <label for="taxa-eur">1 EUR =</label>
+              <input type="number" id="taxa-eur" min="0" step="any" placeholder="MZN">
+            </div>
+            <div class="taxa">
+              <label for="taxa-zar">1 ZAR =</label>
+              <input type="number" id="taxa-zar" min="0" step="any" placeholder="MZN">
+            </div>
+          </div>
+
+          <h3>Resultado</h3>
+          <div class="resultados">
+            <div class="resultado">
+              <span class="moeda">USD</span>
+              <span class="valor" id="res-usd">—</span>
+            </div>
+            <div class="resultado">
+              <span class="moeda">EUR</span>
+              <span class="valor" id="res-eur">—</span>
+            </div>
+            <div class="resultado">
+              <span class="moeda">ZAR</span>
+              <span class="valor" id="res-zar">—</span>
+            </div>
+          </div>
+
+          <button type="button" id="limpar" class="botao">Limpar</button>
+        </div>
+
+        <div class="bloco bloco-projecto">
+          <h3>Sobre este projecto</h3>
+          <p>Calculadora simples que converte um valor em meticais para USD, EUR e ZAR. As taxas são introduzidas pelo utilizador, para reflectirem sempre o câmbio do dia. O resultado actualiza enquanto se escreve.</p>
+          <p class="tecnologias"><span>HTML</span> <span>CSS</span> <span>Grid</span> <span>JavaScript</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kilson Parruque. Instituto de Transportes e Comunicações.</p>
+  </footer>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>

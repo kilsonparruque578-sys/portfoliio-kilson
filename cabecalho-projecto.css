@@ -1,0 +1,47 @@
+
+/* Cabeçalho exclusivo da página do projecto */
+
+.cabecalho-projecto {
+  background-color: #593E1C;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cabecalho-projecto .nav-projecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 16px;
+}
+
+.cabecalho-projecto .nav-projecto a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.cabecalho-projecto .nav-projecto a:hover {
+  color: #D9C8B4;
+}
+
+.cabecalho-projecto .nav-projecto a.idioma {
+  border: 1px solid #D9C8B4;
+  padding: 2px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cabecalho-projecto .nav-projecto a.idioma:hover {
+  background-color: #D9C8B4;
+  color: #593E1C;
+}
+
+@media (max-width: 700px) {
+  .cabecalho-projecto .nav-projecto {
+    gap: 16px;
+  }
+}
